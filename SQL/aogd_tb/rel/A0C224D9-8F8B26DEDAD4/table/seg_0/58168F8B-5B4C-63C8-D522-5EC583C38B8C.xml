@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58168F8B-5B4C-63C8-D522-5EC583C38B8C" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="EMAIL_ATTACHMENT">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>EMAIL_ATTACHMENT</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:30 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMAILATTACHMENTID" id="E80C9B97-E382-6EE2-3C34-4151B6EC28A9">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>EMAILATTACHMENTID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTACHMENT_NAME" id="49B1CA0A-7F40-C4FB-2BE8-F004952FDFB6">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>ATTACHMENT_NAME</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="5C3876A3-5B08-C696-5238-CCC10ED31F16">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>CONTENT</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENCODING" id="2634022C-E5A1-3EA1-5FD6-62EFCAFE203B">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>ENCODING</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIME_TYPE" id="74770C36-E87F-3A55-B634-BD19126422EB">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>MIME_TYPE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_MESSAGE_ID" id="293E74AD-3AB0-56B1-DD2F-31BAA9B1204C">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>EMAIL_MESSAGE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F0ACC53-6077-F80F-4377-319159694DA2" referredColumn="D712952A-6B4B-690D-C972-AF3B159FAACD"/>
+</associations>
+</Column>
+<Column name="AOGD_OPRETTET" id="C21425F7-5C14-2B2C-0F18-E0200BF39327">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="44B41E3D-5CA8-C1FC-23CA-8D0F759E9B2E">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERNO" id="8F995CAE-F2E2-C3A2-A149-9702F5643F1B">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_ATTACHMENT</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B8567B3-7E3A-7A4A-D1B6-CB8F34B95E43" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="EMAIL_ATTACHMENT_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>SYS_C0075551</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E80C9B97-E382-6EE2-3C34-4151B6EC28A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F78A428-AA0C-C6AA-2C39-611CF15FEB78" name="FK_B8LH9DXTU84XS5BSP97HAIA6P">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="293E74AD-3AB0-56B1-DD2F-31BAA9B1204C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

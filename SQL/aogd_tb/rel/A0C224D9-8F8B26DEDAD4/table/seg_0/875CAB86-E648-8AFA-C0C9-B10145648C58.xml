@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="875CAB86-E648-8AFA-C0C9-B10145648C58" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="DATABASE_PATCH">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>DATABASE_PATCH</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:29 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PATCH_NAME" id="DBE3D209-E6B1-7268-F3B3-048E7BB721FA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>DATABASE_PATCH</sourceObjSchema>
+<sourceObjName>PATCH_NAME</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PATCH_VERSION" id="9B293DCF-E207-7E37-FE3D-7EB11195DA94">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>DATABASE_PATCH</sourceObjSchema>
+<sourceObjName>PATCH_VERSION</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FFC53056-DD62-299A-38E6-B289DDC3DBB8" name="DATABASE_PATCH_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>DATABASE_PATCH_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:05 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBE3D209-E6B1-7268-F3B3-048E7BB721FA"/>
+<colUsage columnID="9B293DCF-E207-7E37-FE3D-7EB11195DA94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49840A86-DF6D-A8DA-F210-862DF5225169" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="DATABASE_PATCH_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>DATABASE_PATCH_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBE3D209-E6B1-7268-F3B3-048E7BB721FA"/>
+<colUsage columnID="9B293DCF-E207-7E37-FE3D-7EB11195DA94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

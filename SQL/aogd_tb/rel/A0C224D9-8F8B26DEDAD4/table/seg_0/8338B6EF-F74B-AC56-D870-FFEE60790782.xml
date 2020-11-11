@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8338B6EF-F74B-AC56-D870-FFEE60790782" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="KANAL_TYPE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KANAL_TYPE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:31 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KANAL_TYPE_ID" id="D640E17F-3007-26F1-882B-E23C1F83079E">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>KANAL_TYPE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[INTERNAL PRIMARY KEY - CHANNEL TYPE ID ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAVN" id="6CB25D01-4943-8218-D5D2-725F3C1850D6">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHANNEL NAME]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GYLDIFRA" id="D3900D91-5B44-7799-C52C-DBBF6FDB0117">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>GYLDIFRA</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHANNEL TYPE IS VALID FROM ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GYLDIGTIL" id="A4825D33-E661-E143-1939-98D86CB0AC73">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>GYLDIGTIL</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHANNEL TYPE IS VALID TO]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KRAEVERSAMTYKKE" id="A6683A08-2CE7-0379-B7FC-FAC94682C659">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>KRAEVERSAMTYKKE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[CONTENT OF THE SUBJECT]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMMER" id="0CBC1BCD-FD17-D650-10CA-EC4A27BC4693">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHANNEL TYPE NUMBER]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERNO" id="56490652-59A8-7824-F7DB-CE5F3D09AA85">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[ VERSION NUMBER FOR HIBERNATE FRAMEWORK ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPRETTET" id="E8278528-0E30-15F5-1BB0-EA861F210871">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS CREATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="5CD9B7B0-0805-0EE5-C60C-D78F22FE8F99">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>KANAL_TYPE</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS UPDATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1CB34C4-9F74-FB39-5BFB-E624F6FBD149" name="KANAL_TYPE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KANAL_TYPE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:05 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D640E17F-3007-26F1-882B-E23C1F83079E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3308BA42-D188-8AB7-8D67-7CE8148108DD" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="KANAL_TYPE_IDX1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KANAL_TYPE_IDX1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CBC1BCD-FD17-D650-10CA-EC4A27BC4693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="679F3BBF-C1B2-F451-8EAD-81CAFF43BE67" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="KANAL_TYPE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KANAL_TYPE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D640E17F-3007-26F1-882B-E23C1F83079E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

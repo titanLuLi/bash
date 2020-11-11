@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D6BB7D0A-7136-5A0D-3BDB-D01A21026570" containerWithKeyObject="0676A92A-6AF0-3A5D-7012-E31770C1949F" localFKIndex="14BA0202-A783-4CC4-2D23-1851F7407247" name="MASSFOR_MASSAFS_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MASSFOR_MASSAFS_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.DP_MASSEAFSENDELSE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA1C3073-D6F6-95D7-1094-258C47610CAC</referredTableID>
+<keyObject>D16B62F2-F0CF-D827-3ADE-8836D14296E8</keyObject>
+<referredKeyID>D16B62F2-F0CF-D827-3ADE-8836D14296E8</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>DP_MASSAFS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

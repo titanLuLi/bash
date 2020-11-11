@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="POST_PRG" directorySegmentName="seg_1" id="EDDB4928-173D-176B-6A19-B501527DB5E3">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:32 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEDDELELSES_TYPE_GRUPPE_ID" id="22AE3F7B-7C02-B39A-DB61-81E0EBCB8751">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POST_PRG_ID" id="3BC652B9-7C39-0E78-A959-2764AC5F29A8">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KODE" id="4331FFF6-B07E-6F18-643A-A8C934FAD1EB">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPDATERET" id="4A277CD4-F9EF-BC68-E3B2-C4F6E61FECA4">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPRETTET" id="56569AE1-8D9A-A19E-1232-DF3B5DF117F0">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERNO" id="E9985143-9CD8-67E8-B104-56D6BCE3C169">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_S2H75DNDGY3SK7CIFHSTEMGHG" id="F889B039-DBD8-0E0C-7FEA-56570DEBFAC6">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="POST_PRG_PK" id="E51A80A5-6FE1-B272-FCA6-3362E0CE0767">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:06 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<indexSegment>D6BAF089-6277-B008-7708-773C8376FB31</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

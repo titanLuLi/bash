@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2998E989-F5F5-256B-F58D-B871645ABAE1" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="EMAIL_MULTISEND">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>EMAIL_MULTISEND</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:30 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MULTISEND_ID" id="05E46165-728F-527E-7349-161A3E3BCCEF">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_MULTISEND</sourceObjSchema>
+<sourceObjName>MULTISEND_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,12,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GUID" id="62CB95D6-5DF7-1CCF-773A-274B2450F32A">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_MULTISEND</sourceObjSchema>
+<sourceObjName>GUID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 CHAR</dataTypeSize>
+<ownDataTypeParameters>1024 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSION" id="65506127-D14D-3237-2ADD-E3F4147505DA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_MULTISEND</sourceObjSchema>
+<sourceObjName>VERSION</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPRETTET" id="0A85C0B7-4883-6219-5402-E91CBE5DD4B7">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_MULTISEND</sourceObjSchema>
+<sourceObjName>OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPDATERET" id="205F3EF6-3030-84C3-DEC7-8241B56D8036">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>EMAIL_MULTISEND</sourceObjSchema>
+<sourceObjName>OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

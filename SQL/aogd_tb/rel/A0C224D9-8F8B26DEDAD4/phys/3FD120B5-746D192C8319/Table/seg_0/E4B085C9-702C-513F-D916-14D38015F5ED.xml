@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMAIL_ADRESSE" directorySegmentName="seg_0" id="E4B085C9-702C-513F-D916-14D38015F5ED">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:30 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VERNO" id="11E118F0-DAB8-7182-9320-4DA7D2EF1C8D">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="1FBE3128-F37B-C2D1-3241-0BA9FA3B0889">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KONTAKT_OPLYSNING_ID" id="38303C33-22E2-317D-B9D7-DD484A1890CA">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPRETTET" id="47BCFD8F-D75B-9E50-3B1E-06ADB83FEA1B">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="SIKKER_HEDSERKLAERING" id="6AB84B79-262C-F6BC-0FDA-41769D062176">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPDATERET" id="B1D375E9-ED70-A7D6-A69E-24CEE79D492D">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL_ADRESSE_ID" id="F656CEC7-A9BF-4106-0654-40C5773A629C">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMAIL_ADRESSE_FK1" id="02E5190A-0499-E66E-A432-E013B98790EA">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMAIL_ADRESSE_PK" id="77BC56B7-9C46-E592-B29E-FB07CF76C41C">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMAIL_ADRESSE_IDX1" id="8EB1A5FB-FDE9-1704-1F3B-CED0A1257FEC">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMAIL_ADRESSE_KONTAKT_OPL_FK" id="1696C8E6-0384-1891-BDDC-37F31EDB864C">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMAIL_ADRESSE_PK" id="2E0D78D5-2BF9-E6A7-D53C-D89B96F163D7">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:05 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<existingIndex>77BC56B7-9C46-E592-B29E-FB07CF76C41C</existingIndex>
+<indexSegment>D6BAF089-6277-B008-7708-773C8376FB31</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

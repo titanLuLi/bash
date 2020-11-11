@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ABEF7B0A-70F3-6EE9-F7AD-40684FEF1D38" containerWithKeyObject="A82A8CA5-E14B-4219-F833-85B90D6E9F14" localFKIndex="A02D9636-B930-ED18-7B96-8E07E25835E0" name="ENDRING_LOG_TILKNYTTETXML_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ENDRING_LOG_TILKNYTTETXML_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.TILKNYTTETXMLFIL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE33BA54-8A41-A85F-C02C-67EFF4D9458F</referredTableID>
+<keyObject>AF84D6C0-0757-3F63-5C3C-B0F0664236AD</keyObject>
+<referredKeyID>AF84D6C0-0757-3F63-5C3C-B0F0664236AD</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>TILKNYTTETXMLFIL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="AGENCY" directorySegmentName="seg_0" id="22691BFD-FB24-4B1F-3005-DC4D1337BD43">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:29 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SENDER_NO" id="21742C04-1F26-98A6-BB27-4F784491D6F2">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERNO" id="3EBF39CE-8A1F-51AF-F9A7-C73FC89B9F6D">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="4FE14627-50F9-E21B-B7BF-ADBDA276C6C7">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="86B365EE-2AB4-D238-BCB3-D0C7233381BB">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_NO" id="8EF0EDF4-FFDB-3FEF-B707-FCAAE1F25AB1">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPDATERET" id="97A3D761-680D-E90F-7E09-F72B9C270A7B">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPRETTET" id="E6D00031-7934-202A-B851-756E9A92AE98">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="AGENCY_PK" id="EE9E0CF4-F464-41A1-5C9E-22E920D6E5E4">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:04 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<indexSegment>D6BAF089-6277-B008-7708-773C8376FB31</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBA9F88B-99F6-BD62-A1D8-811A9D7B00FD" containerWithKeyObject="ADB64D55-4563-57F8-A794-DDFA002D9B02" localFKIndex="8D279373-DCFB-F543-1CB6-925C645EE782" name="AFTALE_SPROG_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_SPROG_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.SPROG</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>824A46F8-6551-528B-B2E4-6963E7CDB300</referredTableID>
+<keyObject>F46A246C-A706-83C6-3AE7-520EF8478697</keyObject>
+<referredKeyID>F46A246C-A706-83C6-3AE7-520EF8478697</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>SPROG_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

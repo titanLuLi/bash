@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7992E755-22D4-8261-01B1-E1882FD482E5" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="AFTALE_UDLOB_MEDDELELSE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:29 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AFTALE_UDLOB_MEDDELELSE_ID" id="527AC93C-46A5-888F-E4A0-6E7A20BFE679">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[INTERNAL PRIMARY KEY - EXPIRED AGREEMENT MESSAGE ID]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KUNDE_ID" id="3CD1164F-2487-B6D0-7253-FB034C65205E">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>KUNDE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[FOREIGN KEY - CUSTOMER ID]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A30B77E9-05FA-00E9-0826-89DD1AC22932" referredColumn="85579F32-ADE3-C459-C3B1-E9EB8B2F76CA"/>
+</associations>
+</Column>
+<Column name="MEDDELESESENDT" id="20EE92A9-5370-E6C4-92F3-33F98EA31499">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>MEDDELESESENDT</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE EXPIRED AGREEMENT MESSAGE WAS SENT]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSE_BATCH_ID" id="2B75E2BA-9C9A-1C3A-7DDD-624033260518">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>MEDDELELSE_BATCH_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[MeddelelseBatchID From MMS input]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>36</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,36,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSE_AFSENDER_REFERENCE" id="01313856-28E5-3B08-F798-B98AF16DB048">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>MEDDELELSE_AFSENDER_REFERENCE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[MeddelelseAfsenderReference From MMS input]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERNO" id="F45F0D55-89F6-65D8-9488-7B1E8D86E420">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[VERSION NUMBER FOR HIBERNATE FRAMEWORK]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPRETTET" id="A4FE373D-705D-F689-039E-5AB2E35F09BB">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS CREATED]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="C030A9CB-FD3B-FB3E-CDDA-F963D6C027CA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AFTALE_UDLOB_MEDDELELSE</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS UPDATED]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="242AB429-9792-CBF8-55DD-E59A62A2F862" name="AFTALE_UDLOB_MEDDELELSE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:04 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="527AC93C-46A5-888F-E4A0-6E7A20BFE679"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62034E03-F798-34C6-A0A8-3CC3E9023592" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="AFTALE_UDLOB_MEDDELELSE_FK1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE_FK1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CD1164F-2487-B6D0-7253-FB034C65205E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DAAEE87-6846-476C-89DE-CE0A4EEC5463" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="AFTALE_UDLOB_MEDDELELSE_IDX1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE_IDX1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20EE92A9-5370-E6C4-92F3-33F98EA31499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77EB47DC-A496-C4A2-9322-B1F1CA8849C7" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="AFTALE_UDLOB_MEDDELELSE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>AFTALE_UDLOB_MEDDELELSE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="527AC93C-46A5-888F-E4A0-6E7A20BFE679"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4835082D-C898-2EB5-A371-DF19B9161B33" name="AFTALE_UDLOB_MEDDELELSE_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CD1164F-2487-B6D0-7253-FB034C65205E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

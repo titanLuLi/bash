@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="INSPIRE_XML_FILES" directorySegmentName="seg_0" id="BC352FE6-4E1D-B0F2-D2EB-FE1DC83AB893">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:30 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PROCESS_TYPE" id="13ED202D-E2A0-4E8B-7AF5-00ED5E6FA65F">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPDATERET" id="1B6C0673-3E40-838C-42EE-643B7B803DA5">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INDHOLD" id="2807B3E2-EFFA-AD89-C20C-CC2F2AA2F3CC">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPRETTET" id="28E8C732-E1BD-1EBD-DC2A-21EB4D3DF31F">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="INSPIRE_XML_FILE_ID" id="2D755605-3954-CFE5-294B-80169112A4B4">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERNO" id="7A54D43A-E709-951C-4C0B-02D822D836A5">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="F2C89E9F-E712-AB4B-E43D-DAFD0036AE17">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="INSPIRE_XML_FILES_IDX1" id="7FE7582F-A11E-7762-E930-EA82AE6C4CAA">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="INSPIRE_XML_FILES_IDX3" id="9D5AA8EE-4E07-02C9-60CB-E8833920D4BC">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="INSPIRE_XML_FILES_IDX2" id="EDF4E145-C84A-6BBB-3509-272EB23080DD">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="INSPIRE_XML_FILES_IDX4" id="FB7EC1BB-2DA8-68B7-3AAC-66727B8619A8">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000332141C00005$$" id="7BAED9D0-7DDC-EB22-9749-A8B5DB1CF708">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:12 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>INDHOLD</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="INSPIRE_XML_FILES_PK" id="9FECC21B-7B8A-3701-6040-20081E5F290A">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:05 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<indexSegment>D6BAF089-6277-B008-7708-773C8376FB31</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

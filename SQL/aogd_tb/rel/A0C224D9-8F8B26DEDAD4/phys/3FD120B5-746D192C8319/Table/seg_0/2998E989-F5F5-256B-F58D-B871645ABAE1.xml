@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMAIL_MULTISEND" directorySegmentName="seg_0" id="2998E989-F5F5-256B-F58D-B871645ABAE1">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:30 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MULTISEND_ID" id="05E46165-728F-527E-7349-161A3E3BCCEF">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPRETTET" id="0A85C0B7-4883-6219-5402-E91CBE5DD4B7">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="OPDATERET" id="205F3EF6-3030-84C3-DEC7-8241B56D8036">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GUID" id="62CB95D6-5DF7-1CCF-773A-274B2450F32A">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERSION" id="65506127-D14D-3237-2ADD-E3F4147505DA">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FDFD145C-8489-0BC7-F2F2-8887EA0FF4D5" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="TMP_OPRYDNING_MTV">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>TMP_OPRYDNING_MTV</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:32 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDDELELSE_TYPE_VERSION_ID" id="F0D3DB66-C70B-4991-01FF-F1F6D911CAAE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_VERSION_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSE_TYPE_ID" id="5D0AAA35-16F1-F6CD-4D6B-661288BA058D">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSIONS_NUMMER" id="366C0485-F9AC-3896-20F2-A4BBA4629ABF">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>VERSIONS_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKAL_I_KOMMUNIKATIONS_MAPPE" id="39885A2D-0D40-F30B-C609-12B86F82B624">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>SKAL_I_KOMMUNIKATIONS_MAPPE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KVITTERING_SKAL_SENDES" id="3CB26313-56A2-81D8-D96E-03E1809FDF6F">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>KVITTERING_SKAL_SENDES</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARKIVER_ESDH" id="0354C0A7-CBD9-6E67-2E1B-6CC766049E2A">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>ARKIVER_ESDH</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTKATEGORI_ID" id="4C368F58-098D-1255-2D67-EB6419C032DF">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>POSTKATEGORI_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GYLDIGFRA" id="D7E9DD52-7977-0B33-E02B-5344197C5EBC">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>GYLDIGFRA</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GYLDIGTIL" id="B5941366-9CD9-43AB-73D8-FA52958F67EA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>GYLDIGTIL</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKABELON_SET_ID" id="C859A9AD-6CAE-524A-1111-5FBB764C7E82">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>SKABELON_SET_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADVIS_SKABELON_SET_ID" id="0161688C-1DB6-5DD5-8473-8D8377373398">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>ADVIS_SKABELON_SET_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERNO" id="65B23EF6-DD4A-62E5-9CAA-C1D276B52607">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPRETTET" id="5F29B5FB-251E-5285-2B72-AC61473BECAA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="5541B8C1-5323-3B3C-BF03-4C3BC05940F8">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KUN_OFFICIEL_ADRESSE" id="53049843-0D6D-F4F0-9A40-02FB127CAB95">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>KUN_OFFICIEL_ADRESSE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIALE_ID" id="FB7DB2AE-6D4D-7DB7-5D14-AB2AF4B57CE3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>MATERIALE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KUN_OFFICIEL_DIGITAL_POST" id="5CA0923E-3CDD-B58E-8194-7928FB50ACC2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>TMP_OPRYDNING_MTV</sourceObjSchema>
+<sourceObjName>KUN_OFFICIEL_DIGITAL_POST</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

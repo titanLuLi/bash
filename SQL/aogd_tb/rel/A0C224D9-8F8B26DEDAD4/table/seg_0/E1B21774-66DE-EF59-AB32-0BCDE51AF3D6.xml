@@ -1,0 +1,300 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1B21774-66DE-EF59-AB32-0BCDE51AF3D6" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSE_TYPE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:31 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDDELELSE_TYPE_ID" id="6CA81A05-FC25-A874-FC73-08FB39B7714F">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[INTERNAL PRIMARY KEY - MESSAGE TYPE ID ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAVN" id="5A14B141-D22A-CBF1-433D-08BBF14DE6E5">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[MESSAGE TYPE NAME ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KVITTERING_ADRESSE" id="240CDAA0-0DED-C122-F793-7979D5B72D11">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>KVITTERING_ADRESSE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[ACKNOWLEDGEMENT ADDRESS]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSE_TYPE_NUMMER" id="BF22656A-269F-A86E-2EC1-ADB6321B6E75">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[SEQUENCE NUMBER - MESSAGE TYPE NUMBER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18 BYTE</dataTypeSize>
+<ownDataTypeParameters>18 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSE_TYPE_GRUPPE_ID" id="5DE4725E-71B3-3B90-1EB8-AB3C7B992ED3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_GRUPPE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[FOREIGN KEY - MESSAGE TYPE GRUPPE ID]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA01366-0487-9680-3154-1AF6851E360F" referredColumn="B25220A6-A2FF-9EE9-E4D1-517DE4CAA212"/>
+</associations>
+</Column>
+<Column name="VERNO" id="ADDF7EF5-1807-BD29-12C9-5B280FA2FF57">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[ VERSION NUMBER FOR HIBERNATE FRAMEWORK ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPRETTET" id="2CAE8994-F6F8-D59C-BF13-4D27FEFCA9DB">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS CREATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="AD06966E-003C-E2CF-CE95-D27FFDAE727A">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS UPDATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AKTIV_I_MINUTTER" id="0E3C468E-0A99-7459-4959-A8E6B442BB66">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>AKTIV_I_MINUTTER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE TIME TO LIVE FOR A MEDDELELSE IN MINUTES]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="XSL_SCRIPT_ID" id="631ACE8F-8165-EC3D-B5D2-27896F9E1C6B">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>XSL_SCRIPT_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGENCY_CODE" id="67275333-9A1B-AA3E-3D32-DDCF2DF221CC">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MEDDELELSE_TYPE</sourceObjSchema>
+<sourceObjName>AGENCY_CODE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:35 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="519107C6-6E20-242B-5EF8-DCDDE613EB20" referredColumn="4FE14627-50F9-E21B-B7BF-ADBDA276C6C7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C186F79E-0567-B461-1A2B-AAAE0F446B24" name="MEDDELELSES_TYPE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSES_TYPE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:06 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CA81A05-FC25-A874-FC73-08FB39B7714F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B5AD836-BFB9-168C-18E6-711CBCAE6212" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSES_TYPE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSES_TYPE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CA81A05-FC25-A874-FC73-08FB39B7714F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BCFE549-32BC-A1DB-B79B-7AC36FFE3CCE" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSE_TYPE_FK1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_FK1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DE4725E-71B3-3B90-1EB8-AB3C7B992ED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12CD5C99-1829-53B2-1609-785ED2219A04" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSE_TYPE_FK2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_FK2</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="631ACE8F-8165-EC3D-B5D2-27896F9E1C6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7414A7A-B7F0-1547-BD4B-078E49A3FDFD" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSE_TYPE_IDX1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_IDX1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF22656A-269F-A86E-2EC1-ADB6321B6E75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="382C959C-C4FF-299A-47E7-B7AA01082C3D" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MEDDELELSE_TYPE_IDX2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_TYPE_IDX2</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A14B141-D22A-CBF1-433D-08BBF14DE6E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="450707B3-FA48-14AE-5CAD-2F12E5CFC546" name="MEDDELELSETYPEGRUPPEID_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DE4725E-71B3-3B90-1EB8-AB3C7B992ED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FA7536C-5441-A27C-CE47-1C1BD0AE7E06" name="MEDDELELSE_TYPE_AGENCY_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67275333-9A1B-AA3E-3D32-DDCF2DF221CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F3BDCF3-A316-780A-9440-7928B170BBDA" name="XSLSCRIPTID_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="631ACE8F-8165-EC3D-B5D2-27896F9E1C6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

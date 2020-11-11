@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1581B374-CCED-E017-A746-F2A7F8C71A10" containerWithKeyObject="CEB2587E-FF3D-1FEB-62A2-7D00E207FB3D" localFKIndex="79C31E4F-DD8F-BE24-9374-BD9804853948" name="INDBLIK_MEDDELELSE_TYPE_M_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>INDBLIK_MEDDELELSE_TYPE_M_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.MEDDELELSE_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1B21774-66DE-EF59-AB32-0BCDE51AF3D6</referredTableID>
+<keyObject>C186F79E-0567-B461-1A2B-AAAE0F446B24</keyObject>
+<referredKeyID>C186F79E-0567-B461-1A2B-AAAE0F446B24</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEDDELELSE_TYPE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

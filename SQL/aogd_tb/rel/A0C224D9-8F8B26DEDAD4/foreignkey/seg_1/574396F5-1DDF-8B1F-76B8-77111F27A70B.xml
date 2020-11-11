@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="574396F5-1DDF-8B1F-76B8-77111F27A70B" containerWithKeyObject="2FEC9D29-5E7F-A07F-F06A-A545DEC13032" localFKIndex="9C2FA7F6-F64A-893F-AB1D-1F2B2D2E9EEC" name="VERSION_POSTKATEGORIID_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>VERSION_POSTKATEGORIID_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.POSTKATEGORI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>28167A4C-F3C6-540D-EC17-2F2636735C97</referredTableID>
+<keyObject>BE0B18B8-7BD1-056F-032B-0030B16515EA</keyObject>
+<referredKeyID>BE0B18B8-7BD1-056F-032B-0030B16515EA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>POSTKATEGORI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

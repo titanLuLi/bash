@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99CE4FEE-4490-7162-F524-C52C94DA8221" containerWithKeyObject="077F4DF5-0359-5D0E-ABC3-81D9CCBCD2F3" localFKIndex="90DB9487-25FF-EE3B-1BEE-3E4770C8AE04" name="FORMATERET_MEDDELELSE_PDF_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>FORMATERET_MEDDELELSE_PDF_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.PRINTNET_PDF</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F1AEAAC9-8A41-EDB4-D724-69D42F236D76</referredTableID>
+<keyObject>E555878D-D833-8257-18B8-F889E26B1ABE</keyObject>
+<referredKeyID>E555878D-D833-8257-18B8-F889E26B1ABE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PRINTNET_PDF_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

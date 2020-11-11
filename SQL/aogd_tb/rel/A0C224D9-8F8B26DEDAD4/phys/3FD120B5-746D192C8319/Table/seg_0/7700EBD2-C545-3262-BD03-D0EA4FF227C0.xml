@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="P_NUMBER_CACHE" directorySegmentName="seg_0" id="7700EBD2-C545-3262-BD03-D0EA4FF227C0">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:31 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DE635A5A-5040-55F4-6C8A-DEEEB21E34A7</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FLOOR" id="021C8B1F-F606-9988-B495-C573A1D2CA7B">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPRETTET" id="178C1C44-2634-87DD-AE60-E6DF408AB331">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="1811DE2E-CF0E-484C-303D-C63BF39C367A">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTNUMBER" id="2B7A02B6-76BD-08E7-B560-1CEB699E70BE">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRYCODE" id="33666F92-E7FB-2995-D9AE-FA08021816F4">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOUSETO" id="401BBAC5-CB4A-7F30-C0B6-E2A34814483D">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOUSEFROM" id="4786D45F-001E-9489-E635-C1A3B4CAD94B">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONAME" id="507C6193-BBA2-789A-902C-C8718A45252F">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADRESSETILHUSBOGSTAV" id="681EC3E6-2641-EA01-E20A-E8795F5994E5">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DOOR" id="6B977D3D-748E-6F0A-F6E9-5D23204A54A4">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STREETNAME" id="81C4FF3B-BF75-0F68-907B-B3B77FAB3A1E">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AOGD_OPDATERET" id="87C1C3DD-F147-25A2-B35A-8A1BC5278AD3">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERIODEFROM" id="8D20DDA7-A767-815F-66A5-22364228DC8E">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADRESSEFRAHUSBOGSTAV" id="A1E0A8BC-9BA1-F52E-C294-BE7A6EF15C2C">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PNUMBER" id="C81B9A1E-9C31-107D-0ADB-B7277A793F45">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERNO" id="CDCD46C9-A07C-33B6-F007-1DCABEC31E0B">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTDISTRICT" id="D3353B13-BE15-D2F4-97AD-3CBC129C03F5">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STREETCODE" id="D475F1EB-4F11-1E34-2D14-7AABD2FBCF2F">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTBOX" id="E531FC3A-3DE6-8B77-6251-8BB8B4508FC7">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="P_NUMBER_CACHE_PK" id="84CE8EF1-0229-BFB5-D369-79A66F053A74">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:06 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<segment>D6BAF089-6277-B008-7708-773C8376FB31</segment>
+<tableSpace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tableSpace>
+<indexSegment>D6BAF089-6277-B008-7708-773C8376FB31</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

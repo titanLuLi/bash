@@ -1,0 +1,262 @@
+
+select * from EBOKS_RECEIPT
+where STATUS = 'ERROR' or STATUS = 'USER_NOT_DP_RECEIVER'
+
+
+INSERT INTO  LURUSER.EBOKS_RECEIPT_TEMPLATE (ID,TYPE,DOCUMENT_TITLE,CREATED_BY,CREATED_DATE,MODIFIED_BY,MODIFIED_DATE)
+VALUES (1,'BLOCKED_PERM_WITH_ADS','Kvitteringsbrev vedrørende endelig udelukkelse','TNL',to_timestamp('20-DEC-19 13.02.10.491000000','DD-MON-RR HH24.MI.SSXFF'),'TNL',to_timestamp('20-DEC-19 13.02.15.691000000','DD-MON-RR HH24.MI.SSXFF'));
+INSERT INTO  LURUSER.EBOKS_RECEIPT_TEMPLATE (ID,TYPE,DOCUMENT_TITLE,CREATED_BY,CREATED_DATE,MODIFIED_BY,MODIFIED_DATE)
+VALUES (2,'BLOCKED_TEMP_WITH_ADS','Kvitteringsbrev vedrørende midlertudig udelukkelse','TNL',to_timestamp('20-DEC-19 13.02.10.491000000','DD-MON-RR HH24.MI.SSXFF'),'TNL',to_timestamp('20-DEC-19 13.02.15.691000000','DD-MON-RR HH24.MI.SSXFF'));
+INSERT INTO  LURUSER.EBOKS_RECEIPT_TEMPLATE (ID,TYPE,DOCUMENT_TITLE,CREATED_BY,CREATED_DATE,MODIFIED_BY,MODIFIED_DATE)
+VALUES (3,'REQUESTED_REMOVAL','Kvitteringsbrev vedrørende anmodning om slenting','TNL',to_timestamp('20-DEC-19 13.02.10.491000000','DD-MON-RR HH24.MI.SSXFF'),'TNL',to_timestamp('20-DEC-19 13.02.15.691000000','DD-MON-RR HH24.MI.SSXFF'));
+INSERT INTO  LURUSER.EBOKS_RECEIPT_TEMPLATE (ID,TYPE,DOCUMENT_TITLE,CREATED_BY,CREATED_DATE,MODIFIED_BY,MODIFIED_DATE)
+VALUES (4,'DELETED','Kvitteringsbrev vedrørende bekræftelse af sletning af endeling udelukkelse','TNL',to_timestamp('20-DEC-19 13.02.10.491000000','DD-MON-RR HH24.MI.SSXFF'),'TNL',to_timestamp('20-DEC-19 13.02.15.691000000','DD-MON-RR HH24.MI.SSXFF'));
+commit;
+
+
+
+drop table LURUSER.EBOKS_RECEIPT_HIST;
+
+
+create table LURUSER.EBOKS_RECEIPT_HIST
+(
+	ID NUMBER not null
+		primary key,
+	CPR VARCHAR2(128) not null,
+	TYPE VARCHAR2(128) not null,
+	STATUS VARCHAR2(128) not null,
+	FAILED_TIMES NUMBER,
+	JOB_SENDING_DATE TIMESTAMP(6) not null,
+	GENERATED_DATE TIMESTAMP(6) not null,
+	LAST_MODIFIED_DATE TIMESTAMP(6) not null,
+	BLOCKED_UNTIL_DATE TIMESTAMP(6),
+	FAILURE_CODE VARCHAR2(128),
+	DATABASE_OPERATION VARCHAR2(2) not null	
+);
+
+
+select *  from EBOKS_RECEIPT_HIST FETCH NEXT 100 ROWS ONLY;
+ select * from LURUSER.EBOKS_RECEIPT_HIST;
+ 
+ Select r.* from EBOKS_RECEIPT r
+ where (r.status <> 'SENT' and r.status <> 'USER_NOT_DP_RECEIVER') 
+ and r.FAILED_TIMES < 5 
+ or r.JOB_SENDING_DATE <> null 
+    ORDER BY  id DESC;
+
+
+create table LURUSER.EBOKS_RECEIPT
+(
+	ID NUMBER not null
+		primary key,
+	CPR VARCHAR2(128) not null,
+	TYPE VARCHAR2(128) not null,
+	STATUS VARCHAR2(128) not null,
+	FAILED_TIMES NUMBER,
+	JOB_SENDING_DATE TIMESTAMP(6) not null,
+	GENERATED_DATE TIMESTAMP(6) not null,
+	LAST_MODIFIED_DATE TIMESTAMP(6) not null,
+	BLOCKED_UNTIL_DATE TIMESTAMP(6),
+	FAILURE_CODE VARCHAR2(128),
+	Created_by VARCHAR2(30) not null,
+	created_date TIMESTAMP(6) not null,
+	modified_by VARCHAR2(30) not null,
+	modified_date TIMESTAMP(6) not null
+	
+);
+
+
+commit;
+
+select  * from SPK_ADM_POR_USER_ROLE_H
+where user_id= 'w93128'
+order by created_time desc;
+
+select  * from SPK_ADM_POR_USER_ROLE
+where user_id= 'w93128'
+order by created_time desc;
+
+
+select  * from SPK_ADM_POR_USER_ROLE_H
+where user_id= 'w91776'
+order by created_time desc;
+
+select  * from SPK_ADM_POR_USER_ROLE
+where user_id= 'w91776'
+order by created_time desc;
+
+
+
+
+select  *from ERSTATNING_STATUS;
+
+DELETE FROM LURUSER.SPK_ADM_POR_USER_ROLE WHERE ROLE_ID IN (SELECT ROLE_ID FROM LURUSER.SPK_ADM_POR_ROLE WHERE NAME IN ('SK_Online', 'SK_Kasino', 'SK_Spiellehal', 'SK_Monopol'));
+
+DELETE FROM LURUSER.SPK_ADM_POR_ROLE WHERE NAME IN ('SK_Online', 'SK_Kasino', 'SK_Spiellehal', 'SK_Monopol');
+
+select ur.*, r.name from SPK_ADM_POR_USER u 
+left join SPK_ADM_POR_USER_ROLE ur on u.user_id = ur.USER_ID
+left join SPK_ADM_POR_ROLE r on ur.role_id = r.role_id
+where u.user_id in ( 'w91776_v2');
+
+select PASSWORD_RESET from SPK_ADM_POR_USER u 
+where u.user_id = 'w91776';
+
+delete  from SPK_ADM_POR_USER
+where user_id = 'w91776';
+
+
+select * from LUDOMANIREGISTERAKTIV
+where cpr in ( 0110671102, 0505034175, 0505613147,0505834895,1509562022);
+
+
+update SPK_ADM_POR_USER
+set email = 'KMDSPOKMAIL@kmd.dk'
+where user_ID in (
+select user_id from SPK_ADM_POR_USER 
+where  email like '%an@spillemyndighedden.dk %');
+
+INSERT INTO LURUSER.ROFUSCONFIG ("NAME", "VALUE", "UPDATETIME", "UPDATEID") VALUES ('REMOVAL_FEATURE_ACTIVE', 'false', sysdate, 'tnl');
+delete  from LURUSER.ROFUSCONFIG where NAME = 'REMOVAL_FEATURE_ACTIVE';
+
+update ROFUSCONFIG
+set VALUE = 'true'
+where name ='REMOVAL_FEATURE_ACTIVE';
+
+update ROFUSCONFIG
+set value = 'false'
+where name ='CSRP_HELPER_ACTIVE';
+
+select * from ROFUSCONFIG;
+
+update ROFUSCONFIG
+set VALUE = '0 * * * * 1'
+where name ='REMOVE_BLOCKINGS_SCHEDULE';
+--0 */1 * * * *
+
+select * from LURUSER.ROFUSCONFIG where name ='REMOVAL_FEATURE_ACTIVE';
+773	0505834895	BrugerOprettelse	21-AUG-19 12.01.50.000000000	Ja	21-AUG-20 12.01.50.140000000	21-AUG-19 12.01.50.140000000		I	Ja	Ja	Nej	05-MAY-83 00:00:00	MALE		
+
+select count(*) from LUDOMANIREGISTERAKTIV
+where
+endeligudelukkelse = 'Ja'
+and 
+genaabningsdato is null
+;
+
+9982
+
+select HARFRAVALGTREKLAMER
+from LUDOMANIREGISTERAKTIV
+where cpr = 0505834895;
+--where HARFRAVALGTREKLAMER = 'Nej';
+
+
+--and 
+--genaabningsdato is null
+;
+
+
+update LUDOMANIREGISTERAKTIV 
+set 
+    UDELUKKELSESDATO=TO_DATE('2018-07-17 12:30','YYYY-MM-DD HH24:MI')
+    ,GENAABNINGSDATO=TO_DATE('2019-07-18 12:30','YYYY-MM-DD HH24:MI')
+    --,GENAABNINGSDATO=null
+      --, ENDELIGUDELUKKELSE = 'Nej'
+     --, BEKRAEFTFRADATO= TO_DATE('2019-08-10 12:30:00','YYYY-MM-DD HH24:MI:SS')
+        ,    BEKRAEFTFRADATO= null
+        ,   BEKRAEFTTILDATO = null
+    -- ,BEKRAEFTTILDATO = TO_DATE('2019-08-30 12:30:00','YYYY-MM-DD HH24:MI:SS')
+   -- ,BEKRAEFTTILDATO =TO_DATE('2019-08-22 12:30','YYYY-MM-DD HH24:MI')
+    --,OPRETTETDATO =TO_DATE('2018-08-18 12:30','YYYY-MM-DD HH24:MI') 
+where CPR=0505834894;
+commit ; 
+update LUDOMANIREGISTERAKTIV 
+set 
+    UDELUKKELSESDATO=TO_DATE('2018-07-18 12:30','YYYY-MM-DD HH24:MI')
+    ,GENAABNINGSDATO=TO_DATE('2019-07-18 12:30','YYYY-MM-DD HH24:MI')
+    --,GENAABNINGSDATO=null
+      --, ENDELIGUDELUKKELSE = 'Nej'
+     ,BEKRAEFTFRADATO = TO_DATE('2019-12-10 12:30:00','YYYY-MM-DD HH24:MI:SS')
+    ,BEKRAEFTTILDATO =TO_DATE('2019-12-15 12:30','YYYY-MM-DD HH24:MI')
+    --,OPRETTETDATO =TO_DATE('2018-08-18 12:30','YYYY-MM-DD HH24:MI') 
+where CPR=0505834895; 
+-- 1211800107
+commit ;
+
+
+select * from LUDOMANIREGISTERHIST
+where cpr = '-44-9710446-122-53-83-1669-10521462111323-126126-349224-104-118510393-3212585-38-13-39-113';
+
+
+
+
+
+
+select * from ROFUSCONFIG
+where name = 'CSRP_HELPER_ACTIVE';
+
+insert into ROFUSCONFIG (name, value, updatetime,updateId)
+VALUES ('CSRP_HELPER_ACTIVE','true',sysdate,'z6tnl');
+
+update ROFUSCONFIG 
+set VALUE = 'false'
+where name = 'CSRP_HELPER_ACTIVE';
+
+
+insert into ROFUSCONFIG (name, value, updatetime,updateId)
+VALUES ('NEJ_TAK_PLOICY_FROM','2020-01-01',sysdate,'tnl');
+update ROFUSCONFIG
+set VALUE = 'true'
+where name ='REMOVAL_FEATURE_ACTIVE';
+
+select * from ROFUSCONFIG where name in ('REMOVAL_FEATURE_ACTIVE','NEJ_TAK_POLICY_FROM');
+
+update LURUSER.ROFUSCONFIG
+set VALUE = 'false'
+where name ='REMOVAL_FEATURE_ACTIVE';
+
+commit;
+
+
+select * from LUDOMANIREGISTERAKTIV
+where cpr in( 0505834894 ); 
+delete  from LUDOMANIREGISTERAKTIV
+where cpr = 0505834894; 
+commit ; 
+
+
+1188	0505613147	BrugerOprettelse	11-DEC-19 09.09.53.000000000	Ja	11-DEC-20 09.09.53.365000000	11-DEC-19 09.09.53.365000000		I	Ja	Ja	Ja	05-MAY-61 00:00:00	MALE		
+1188	0505613147	BrugerOprettelse	11-DEC-19 09.11.07.000000000	Ja	11-DEC-20 09.11.07.201000000	11-DEC-19 09.09.53.365000000	11-DEC-19 09.11.07.201000000	U	Ja	Ja	Ja	05-MAY-61 00:00:00	MALE		
+
+
+insert into LURUSER.ROFUSCONFIG (name, value, updatetime,updateId)
+VALUES ('NEJ_TAK_POLICY_FROM','2020-01-01',sysdate,'tnl');
+
+update ROFUSCONFIG
+set VALUE = '2019-12-11'
+where name ='NEJ_TAK_POLICY_FROM';
+
+commit;
+
+select * from ROFUSCONFIG
+where name = 'NEJ_TAK_POLICY_FROM';
+
+update LUDOMANIREGISTERAKTIV 
+set 
+HARFRAVALGTREKLAMER = 'Nej',
+ENDELIGUDELUKKELSE= 'Ja',
+   UDELUKKELSESDATO=TO_DATE('2019-12-05 12:30','YYYY-MM-DD HH24:MI')
+   ,GENAABNINGSDATO=TO_DATE('2020-12-05 12:30','YYYY-MM-DD HH24:MI')
+where CPR=0505834894;
+commit ; 
+
+
+update LUDOMANIREGISTERAKTIV 
+set 
+    UDELUKKELSESDATO=TO_DATE('2019-12-11 12:30','YYYY-MM-DD HH24:MI')
+   ,GENAABNINGSDATO=TO_DATE('2020-12-11 12:30','YYYY-MM-DD HH24:MI')
+where CPR=0505834894;
+commit ; 
+
+

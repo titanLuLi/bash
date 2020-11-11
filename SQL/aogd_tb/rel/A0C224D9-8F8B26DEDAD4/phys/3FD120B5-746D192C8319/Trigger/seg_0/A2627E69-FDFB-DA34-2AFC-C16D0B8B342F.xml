@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="DB_LOG_A_I_S" directorySegmentName="seg_0" id="A2627E69-FDFB-DA34-2AFC-C16D0B8B342F">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>DB_LOG_A_I_S</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:07 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  DELETE FROM DB_LOG WHERE LOG_DATE_TIME < SYSDATE-3;
+END;
+
+
+
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>2BE72DEE-2A4C-D6BF-E5B4-8AF6C2251D87</owner>
+<scope>FOR EACH STATEMENT</scope>
+<table>3022FAF0-1491-927C-B3A7-469833C4ACB4</table>
+</TriggerOraclev10g>

@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="MEDDELELSE_FORMATERET_PK" directorySegmentName="seg_0" id="A5762BBD-871D-25C6-CAC9-88474A6093B2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_FORMATERET_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:07 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  IF INSERTING THEN
+    IF :NEW.MEDD_ID_FORMATERET_ID IS NULL THEN
+      SELECT MEDD_FORMATERET_SEQ.NEXTVAL
+        INTO :NEW.MEDD_ID_FORMATERET_ID
+        FROM DUAL;
+    END IF;
+  END IF;
+END;
+
+
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>2BE72DEE-2A4C-D6BF-E5B4-8AF6C2251D87</owner>
+<table>7F11E034-C42D-DD18-1CD2-C669690C1DE2</table>
+</TriggerOraclev10g>

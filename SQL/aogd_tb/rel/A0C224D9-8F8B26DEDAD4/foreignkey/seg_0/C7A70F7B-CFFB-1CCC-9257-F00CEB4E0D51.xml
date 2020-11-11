@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C7A70F7B-CFFB-1CCC-9257-F00CEB4E0D51" containerWithKeyObject="8DA6D72A-1486-58D3-4140-42F81E69AA13" localFKIndex="9A3D8DE4-D6F4-19B9-0FCC-4C96D94F6089" name="KUNDE_KUNDE_TYPE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KUNDE_KUNDE_TYPE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:10 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.KUNDE_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6B490905-765D-E780-5B25-ADF1B880AB42</referredTableID>
+<keyObject>C0D54738-5C29-6623-29FE-4FB84F96DB55</keyObject>
+<referredKeyID>C0D54738-5C29-6623-29FE-4FB84F96DB55</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>KUNDETYPE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

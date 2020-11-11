@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="KUNDE_AFTALE_PK" directorySegmentName="seg_0" id="F674911E-A8B4-7CC8-6AE3-14205915F26C">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KUNDE_AFTALE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:07 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  IF INSERTING THEN
+    IF :NEW.KUNDE_AFTALE_ID IS NULL THEN
+      SELECT KUNDE_AFTALE_SEQ.NEXTVAL
+        INTO :NEW.KUNDE_AFTALE_ID
+        FROM DUAL;
+    END IF;
+  END IF;
+END;
+
+
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>2BE72DEE-2A4C-D6BF-E5B4-8AF6C2251D87</owner>
+<table>4BABF89A-8227-2CC0-C17F-5D7A0217C2F8</table>
+</TriggerOraclev10g>

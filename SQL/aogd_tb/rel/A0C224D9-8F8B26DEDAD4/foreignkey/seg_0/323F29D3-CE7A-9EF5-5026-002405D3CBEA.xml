@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="323F29D3-CE7A-9EF5-5026-002405D3CBEA" containerWithKeyObject="68D6E3FB-A1FB-1876-3D3F-0D59DDD8914E" localFKIndex="979C83C4-B0A1-1B56-03E5-93ABEE8B3DFF" name="FK_MIXF_INSPIRE_XML_FILES">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>FK_MIXF_INSPIRE_XML_FILES</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:10 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.INSPIRE_XML_FILES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC352FE6-4E1D-B0F2-D2EB-FE1DC83AB893</referredTableID>
+<keyObject>9FECC21B-7B8A-3701-6040-20081E5F290A</keyObject>
+<referredKeyID>9FECC21B-7B8A-3701-6040-20081E5F290A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>INSPIRE_XML_FILE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

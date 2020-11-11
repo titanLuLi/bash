@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4E41443-5437-9E84-9CB2-0BD4CA5B177D" containerWithKeyObject="0676A92A-6AF0-3A5D-7012-E31770C1949F" localFKIndex="5461D952-93A8-CD34-2B29-1D455EB923D1" name="MASSFOR_FORSENDELSE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MASSFOR_FORSENDELSE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.FORSENDELSE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC5B314D-4E1F-83E6-3BE3-F11C071D9491</referredTableID>
+<keyObject>56F872FF-1ED9-A9D2-C56A-FA22274183FC</keyObject>
+<referredKeyID>56F872FF-1ED9-A9D2-C56A-FA22274183FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FORSENDELSE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CF2BDDB-0F17-55C6-15EF-45418E9AF758" containerWithKeyObject="DE2B48F6-4CD0-005C-5635-F1509A366FBF" localFKIndex="ED40C9B6-3B6E-8599-1A59-04690C832774" name="FORMATERET_MEDD_FORSEND_FK1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>FORMATERET_MEDD_FORSEND_FK1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.FORSENDELSE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC5B314D-4E1F-83E6-3BE3-F11C071D9491</referredTableID>
+<keyObject>56F872FF-1ED9-A9D2-C56A-FA22274183FC</keyObject>
+<referredKeyID>56F872FF-1ED9-A9D2-C56A-FA22274183FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FORSENDELSE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,611 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F74F39E4-8C6D-364C-50CD-0798F1DD03EF" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:29 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADRESSE_ID" id="799A73D8-0473-CC6A-1FFD-571860486166">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>ADRESSE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[INTERNAL PRIMARY KEY - ADRESSE ID  ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORTLOBENDE_NUMMER" id="0B3BC739-D402-D16B-9792-B6B4E663F838">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>FORTLOBENDE_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[SEQUENTIAL NUMBER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANVENDELSE_KODE" id="D10CC7BE-AA1A-0241-1F81-0299F35C600F">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>ANVENDELSE_KODE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[APPLICATION CODE]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEJ_NAVN" id="C3112E62-336B-48ED-2C04-F772B289BB47">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>VEJ_NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[STREET NAME]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEJ_KODE" id="539F02E6-6061-D5FE-3D7E-166A5E3DBC04">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>VEJ_KODE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[STREET CODE]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FRAHUS_NUMMER" id="8A6CC98C-7F9C-D837-F327-30DC059B9EE1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>FRAHUS_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FRAHUS_BOGSTAV" id="19E1938C-D484-0E4F-45B0-78287C0890C3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>FRAHUS_BOGSTAV</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FROM LETTER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TILHUS_NUMMER" id="20AE0AAE-1DA2-FB28-A093-DACEB91B3979">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>TILHUS_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[TO HOUSE NUMBER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TILHUS_BOGSTAV" id="93956008-B25E-AC06-810D-B1EACC1C6CCA">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>TILHUS_BOGSTAV</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[TO LETTER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIGEULIGE" id="5F8AC3FC-CFD4-FB2A-E01B-79B0AAF8651F">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>LIGEULIGE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[INDICATES EVEN/ODD NUMBERS]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LEJLIGHED_NUMMER" id="1778FE00-B036-CCAA-5F9C-DBCCB8DB5BF0">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>LEJLIGHED_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[APARTMENT NUMBER ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HUS_NAVN" id="04D63595-3878-E3F6-6515-8A0D78189F92">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>HUS_NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE HOUSE ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAGE" id="4EAEC842-3C8B-E4FF-F222-4C209737EBA1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>ETAGE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FLOOR ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAGE_TEKST" id="E4FB6151-3F7B-1361-9A41-F02D35C20E92">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>ETAGE_TEKST</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE FLOOR  ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIDE_DOR_TEKST" id="53C6FF3A-2F84-BAFF-56E9-F13A0B6FA276">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>SIDE_DOR_TEKST</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[DOOR TEXT ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CO_NAVN" id="606826B7-2345-450D-F9CC-F0155A329D7D">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>CO_NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[CO NAME]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POST_NUMMER" id="C27B98C0-92EB-6DEB-343A-5675D7DD47D2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>POST_NUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[POSTAL NUMBER]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANDS_BY" id="7CBD2622-4212-C25C-8E96-BAA8E4D7CB3E">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>LANDS_BY</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAND BY]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BY_NAVN" id="3C0EB5D2-F84B-0C65-6249-259065ECBE6B">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>BY_NAVN</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANDS_DEL" id="F901154D-4BF9-0D2D-F185-171158DE01CE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>LANDS_DEL</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[COUNTRYWIDE PART]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POST_BOX" id="E85409C8-C47A-AAA7-40F1-3ABA5CA2AECE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>POST_BOX</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[POST BOX]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAND_ID" id="4A07E9FC-9CDA-9B08-5082-55C88DE1B460">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>LAND_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FOREIGN KEY - LAND ID]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="682A9985-E853-84E5-04D3-19025337EDD4" referredColumn="5DFC34AE-0FA9-0017-47B6-4602AB3EBFCB"/>
+</associations>
+</Column>
+<Column name="ADRESSE_TYPE_ID" id="E623CFA0-FAD8-C701-2543-3932E4FA79CE">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>ADRESSE_TYPE_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FOREIGN KEY - ADDRESS TYPE ID]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB615B79-C102-8A58-4AF2-8DCB4E5A7210" referredColumn="40BC55FC-623B-E6C7-4142-EC5C874F9CC8"/>
+</associations>
+</Column>
+<Column name="KONTAKT_OPLYSNING_ID" id="E2EE464E-B460-B2CF-A71F-7FAFC8EF99AB">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>KONTAKT_OPLYSNING_ID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[FOREIGN KEY - CONTACT INFORMATION ID  ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72CB18EB-2A82-A728-0F53-F3F22D7D11E2" referredColumn="E9BCF87A-17FD-6726-87A4-AC0D897569B1"/>
+</associations>
+</Column>
+<Column name="POST_DISTRIKT" id="4B3CEDD7-93F4-1028-4BAD-445A96DDBA10">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>POST_DISTRIKT</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERNO" id="EE638AEC-5107-2888-F865-5D4313F7F6E9">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>VERNO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[VERSION NUMBER FOR HIBERNATE FRAMEWORK ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPRETTET" id="B10DECE3-EB0F-D01D-8E9A-6F2D52B72465">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>AOGD_OPRETTET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS CREATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AOGD_OPDATERET" id="490BEF46-7DA2-A905-011F-2F50696FF1A2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>ADRESSE</sourceObjSchema>
+<sourceObjName>AOGD_OPDATERET</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE WHEN THE RECORD WAS UPDATED ]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C417D5A-364F-3069-CAC8-BB199FB19862" name="ADRESSE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:55 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="799A73D8-0473-CC6A-1FFD-571860486166"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9222DF9F-E5F8-AEB1-A665-DBEB8E30336E" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_FK1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_FK1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E623CFA0-FAD8-C701-2543-3932E4FA79CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F39350B-5DC2-F01F-8C4B-5613F0E955E7" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_FK2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_FK2</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2EE464E-B460-B2CF-A71F-7FAFC8EF99AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1334416F-E9FE-8569-9360-63BBBDD94259" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_FK3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_FK3</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A07E9FC-9CDA-9B08-5082-55C88DE1B460"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1127A5FD-FAA2-58D0-6A4A-53FB1D8B6426" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_IDX1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_IDX1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C27B98C0-92EB-6DEB-343A-5675D7DD47D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04B7F40E-9D03-5F48-4E96-E10ACFDFF0BD" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_IDX2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_IDX2</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3112E62-336B-48ED-2C04-F772B289BB47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B97F56FF-DDBF-9222-03FB-6A73B08CCE93" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_IDX3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_IDX3</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A6CC98C-7F9C-D837-F327-30DC059B9EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51FA9A85-F840-250A-7F54-DCE27AE18A00" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="ADRESSE_PK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:43 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="799A73D8-0473-CC6A-1FFD-571860486166"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F770434-D8B3-F035-F446-7D30A200A5BC" name="ADRESSE_ADRESSE_TYPE_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E623CFA0-FAD8-C701-2543-3932E4FA79CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A1C7E6F-54A3-3090-395D-5F1626F2EF4D" name="ADRESSE_KONTAKT_OPLYSNING_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2EE464E-B460-B2CF-A71F-7FAFC8EF99AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9641B633-CA45-F766-CAE9-D623C3F67DDA" name="ADRESSE_LAND_FK">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A07E9FC-9CDA-9B08-5082-55C88DE1B460"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

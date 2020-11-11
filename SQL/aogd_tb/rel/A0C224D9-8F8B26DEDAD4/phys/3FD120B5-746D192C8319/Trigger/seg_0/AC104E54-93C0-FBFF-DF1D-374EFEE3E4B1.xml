@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="IND_MEDD_PK" directorySegmentName="seg_0" id="AC104E54-93C0-FBFF-DF1D-374EFEE3E4B1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IND_MEDD_PK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:07 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+  IF INSERTING THEN
+    IF :NEW.INDBLIK_MEDDELELSE_TYPE_ID IS NULL THEN
+      SELECT IND_MEDD_SEQ.NEXTVAL
+        INTO :NEW.INDBLIK_MEDDELELSE_TYPE_ID
+        FROM DUAL;
+    END IF;
+  END IF;
+END;
+
+
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>2BE72DEE-2A4C-D6BF-E5B4-8AF6C2251D87</owner>
+<table>CEB2587E-FF3D-1FEB-62A2-7D00E207FB3D</table>
+</TriggerOraclev10g>

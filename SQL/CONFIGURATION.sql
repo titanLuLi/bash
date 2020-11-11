@@ -1,0 +1,6 @@
+REM INSERTING into EXPORT_TABLE
+SET DEFINE OFF;
+Insert into EXPORT_TABLE (CONFIGURATION_KEY,CONFIGURATION_VALUE) values ('PRODUCTION_TEMPLATES_SOURCE_DIR','/ld12/Fagsystem/ES/Skabeloner/Designer_Workflows');
+Insert into EXPORT_TABLE (CONFIGURATION_KEY,CONFIGURATION_VALUE) values ('PRODUCTION_TEMPLATES_TARGET_DIR','/ld12/interactive_export/DOCUMENTS_PACKAGES');
+Insert into EXPORT_TABLE (CONFIGURATION_KEY,CONFIGURATION_VALUE) values ('printvendor.ftp.password.external','aodsit0203');
+Insert into EXPORT_TABLE (CONFIGURATION_KEY,CONFIGURATION_VALUE) values ('printvendor.ftp.hostname.external','aoddtsftp01');

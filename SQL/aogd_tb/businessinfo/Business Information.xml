@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="ECDA535B-1317-CC8A-3398-A975F64528EC">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:07:42 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

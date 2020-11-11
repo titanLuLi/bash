@@ -1,0 +1,403 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BADC8C46-2DD5-E24E-BA67-E77B11DBF1F7" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="MESSAGES">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MESSAGES</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[snapshot table for snapshot AOGD.MESSAGES]]></commentInRDBMS>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<typeID>4</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<materializedQueryTable>true</materializedQueryTable>
+<parsed>true</parsed>
+<userDefinedSQL><![CDATA[select * from(
+select kun.nummer kundenummer,kt.NAVN kundetype,mm.aogd_oprettet dato,mtg.navn afsender,mt.navn meddelelseOverskrift,mt.MEDDELELSE_TYPE_NUMMER meddelelsetypenr,mm.MEDDELELSE_ID meddelelseid,f.status forsendelsestatus from aogd.meddelelse mm
+join aogd.KUNDE_AFTALE KA on mm.KOMMUNIKATIONAFTALE_ID = KA.KOMMUNIKATIONAFTALE_ID
+join aogd.kunde kun on kun.KUNDE_ID=KA.KUNDE_ID
+join aogd.kunde_type kt on kun.KUNDETYPE_ID = kt.KUNDETYPE_ID
+join KUNDE_TYPE_MEDDELELSE_TYPE ktmt on kun.KUNDETYPE_ID = ktmt.KUNDE_TYPE_ID
+join meddelelse_type_gruppe mtg on ktmt.MEDDELELSE_TYPE_ID = mtg.MEDDELELSES_TYPE_GRUPPE_ID
+join meddelelse_type mt on mm.MEDDELELSE_TYPE_ID = mt.MEDDELELSE_TYPE_ID
+join AOGD.MEDD_FORMATERET_MEDD mfm on mm.MEDDELELSE_ID=mfm.MEDDELELSE_ID
+join AOGD.FORMATERET_MEDD_FORSEND fmf on mfm.FORMATERET_MEDDELELSE_ID = fmf.FORMATERET_MEDDELELSE_ID
+join AOGD.FORSENDELSE f on fmf.FORSENDELSE_ID = f.FORSENDELSE_ID
+order by mm.aogd_oprettet desc)]]></userDefinedSQL>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KUNDENUMMER" id="2842D6DC-74DC-2F33-33AA-E12B86513CE9">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>KUNDENUMMER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KUNDETYPE" id="7F756F8D-9F50-8C41-A1BC-10FEDF587AF8">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>KUNDETYPE</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATO" id="E6910EA2-837C-AEA4-87F6-6DC05AD38915">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>DATO</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFSENDER" id="4B2BE1D6-DE8E-D0AD-A73A-30E553970AF8">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>AFSENDER</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSEOVERSKRIFT" id="4B29C7BC-E07F-89F1-5066-9F488D48D727">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>MEDDELELSEOVERSKRIFT</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSETYPENR" id="22A79580-9574-219D-52D2-F5E4D03B8355">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>MEDDELELSETYPENR</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18 BYTE</dataTypeSize>
+<ownDataTypeParameters>18 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDDELELSEID" id="FBE3BA6E-1281-B0C2-3812-D96EA67DF998">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>MEDDELELSEID</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORSENDELSESTATUS" id="D6ADF716-3D89-EC45-B4B5-BA260EB982AF">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>MESSAGES</sourceObjSchema>
+<sourceObjName>FORSENDELSESTATUS</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:36 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDAFA137-5023-A30A-4C77-F0D246ADC344" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2842D6DC-74DC-2F33-33AA-E12B86513CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B23BB885-0075-3820-EAF3-FF837D7B359F" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_2">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_2</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F756F8D-9F50-8C41-A1BC-10FEDF587AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="364790EB-B657-FBAB-C183-BFDAECA95AA1" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_3">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_3</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6910EA2-837C-AEA4-87F6-6DC05AD38915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C290808C-2837-57D9-8BE9-A28E955FE9B1" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_4">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_4</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2BE1D6-DE8E-D0AD-A73A-30E553970AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="237E380E-15F2-CD9F-6F52-093D129929B9" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_5">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_5</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B29C7BC-E07F-89F1-5066-9F488D48D727"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF22B59B-0D47-8663-752D-E0C9F19CB0CB" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_6">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_6</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22A79580-9574-219D-52D2-F5E4D03B8355"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A682A9-E138-5EF5-5F66-78703FC05906" schemaObject="3E63F91D-8D31-6DE6-A318-D0F218FD0478" name="IX_MESSAGES_7">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>IX_MESSAGES_7</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:50 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6ADF716-3D89-EC45-B4B5-BA260EB982AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8B47552D-18EE-743C-E476-DDF5E76FE38B">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4BABF89A-8227-2CC0-C17F-5D7A0217C2F8">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>KUNDE_AFTALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8DA6D72A-1486-58D3-4140-42F81E69AA13">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>KUNDE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6B490905-765D-E780-5B25-ADF1B880AB42">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F36DF7EF-CAA3-BBFA-AFB7-F42F6A236308">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE_MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B9840DF4-322A-12C9-C9F3-F06870949AB7">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE_GRUPPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E1B21774-66DE-EF59-AB32-0BCDE51AF3D6">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7F11E034-C42D-DD18-1CD2-C669690C1DE2">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>MEDD_FORMATERET_MEDD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DE2B48F6-4CD0-005C-5635-F1509A366FBF">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>FORMATERET_MEDD_FORSEND</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BC5B314D-4E1F-83E6-3BE3-F11C071D9491">
+<container>true</container>
+<schema>AOGD</schema>
+<tableName>FORSENDELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="97D8EB6D-B54A-AA55-BBB3-BAD9D3A6D6D6">
+<columnName>MEDDELELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AAB1E75F-1B80-4A6F-12CB-9DB337ED70DF">
+<columnName>NUMMER</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DC3D6CE3-890C-B233-5075-0CCA77A3C0EF">
+<columnName>KOMMUNIKATIONAFTALE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F8FA254B-FFE9-0E3D-22D1-02EB316DF5C4">
+<columnName>STATUS</columnName>
+<schema>AOGD</schema>
+<tableName>FORSENDELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8467F6F3-B956-B2ED-FF5F-979BF5C5BDCE">
+<columnName>MEDDELELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDD_FORMATERET_MEDD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A6EC36C8-3936-0A8F-CBEA-D7262AE41B09">
+<columnName>KUNDE_TYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE_MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2E5EFE3F-950D-FF5E-2F04-F80651136AA9">
+<columnName>FORSENDELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>FORSENDELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9B339E9A-528D-2C6B-EC9F-636792D97593">
+<columnName>NAVN</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE_GRUPPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5224D717-3786-75C2-C540-A34F55A382E4">
+<columnName>KUNDE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_AFTALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="148C987A-BB94-8309-F2F4-A1161B0A3BF8">
+<columnName>MEDDELELSE_TYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE_MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5A14B141-D22A-CBF1-433D-08BBF14DE6E5">
+<columnName>NAVN</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B25220A6-A2FF-9EE9-E4D1-517DE4CAA212">
+<columnName>MEDDELELSES_TYPE_GRUPPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE_GRUPPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6EED98D2-9D0B-0405-E9B8-BA84DB7209C0">
+<columnName>AOGD_OPRETTET</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FD88CB6D-FE0F-5AB9-A1A1-7F62421E2DED">
+<columnName>FORSENDELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>FORMATERET_MEDD_FORSEND</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="12F318B4-76F2-B6A4-A1E3-684FC46C602E">
+<columnName>FORMATERET_MEDDELELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>FORMATERET_MEDD_FORSEND</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C78FE379-8BF3-FD4B-FFCC-7C812BCBD194">
+<columnName>NAVN</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BF22656A-269F-A86E-2EC1-ADB6321B6E75">
+<columnName>MEDDELELSE_TYPE_NUMMER</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="85579F32-ADE3-C459-C3B1-E9EB8B2F76CA">
+<columnName>KUNDE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5530AE16-2FB3-9111-D6AB-E0D3F420B96B">
+<columnName>FORMATERET_MEDDELELSE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDD_FORMATERET_MEDD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6DFF6FA3-9757-AF73-8577-E981F68E26D1">
+<columnName>KUNDETYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D4AD1E30-2CFD-BB0C-D7CD-6685A6CDACF4">
+<columnName>KUNDETYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6CA81A05-FC25-A874-FC73-08FB39B7714F">
+<columnName>MEDDELELSE_TYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE_TYPE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4E0E7EC6-D44A-AF2E-D541-3AEDB15AA0DB">
+<columnName>MEDDELELSE_TYPE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>MEDDELELSE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D7F84A49-E7F2-436E-E182-53245307F0DA">
+<columnName>KOMMUNIKATIONAFTALE_ID</columnName>
+<schema>AOGD</schema>
+<tableName>KUNDE_AFTALE</tableName>
+</UsedObject>
+</usedObjects>
+</Table>

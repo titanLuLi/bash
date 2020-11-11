@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1659749E-E62F-880A-A345-40AE45F6FD7C" containerWithKeyObject="BC5B314D-4E1F-83E6-3BE3-F11C071D9491" localFKIndex="7E2FC091-11A2-52C4-1F62-2CCE19DBD549" name="FORSENDELSE_LEVERANCE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>FORSENDELSE_LEVERANCE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.LEVERANCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E0150E95-950B-AFB7-6993-82CF736F6B33</referredTableID>
+<keyObject>F01ED67A-984B-DC2A-F7C1-987620D7C5DC</keyObject>
+<referredKeyID>F01ED67A-984B-DC2A-F7C1-987620D7C5DC</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>LEVERANCE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

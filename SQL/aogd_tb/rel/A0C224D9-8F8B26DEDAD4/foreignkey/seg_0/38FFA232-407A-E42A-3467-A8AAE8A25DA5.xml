@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38FFA232-407A-E42A-3467-A8AAE8A25DA5" containerWithKeyObject="C6ABC63B-2393-D202-A256-4304BB6A60DA" localFKIndex="491234E5-0B31-0DC2-4CA2-C64585D37B79" name="TELEFON_KONTAKTOPLYSNING_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>TELEFON_KONTAKTOPLYSNING_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.KONTAKT_OPLYSNING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B69C2378-564A-A1FA-D94F-FC5067FFD3B0</referredTableID>
+<keyObject>731E47DF-5742-161C-D28D-5E9B4C95F749</keyObject>
+<referredKeyID>731E47DF-5742-161C-D28D-5E9B4C95F749</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>KONTAKT_OPLYSNING_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

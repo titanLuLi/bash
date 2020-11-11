@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="MESSAGES" directorySegmentName="seg_0" id="215BEE70-25B9-E541-48EA-E89BC0C74E3A">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MESSAGES</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:15:31 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<schemaObject>3E63F91D-8D31-6DE6-A318-D0F218FD0478</schemaObject>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>FORCE</refreshType>
+<subquery><![CDATA[select * from(
+select kun.nummer kundenummer,kt.NAVN kundetype,mm.aogd_oprettet dato,mtg.navn afsender,mt.navn meddelelseOverskrift,mt.MEDDELELSE_TYPE_NUMMER meddelelsetypenr,mm.MEDDELELSE_ID meddelelseid,f.status forsendelsestatus from aogd.meddelelse mm
+join aogd.KUNDE_AFTALE KA on mm.KOMMUNIKATIONAFTALE_ID = KA.KOMMUNIKATIONAFTALE_ID
+join aogd.kunde kun on kun.KUNDE_ID=KA.KUNDE_ID
+join aogd.kunde_type kt on kun.KUNDETYPE_ID = kt.KUNDETYPE_ID
+join KUNDE_TYPE_MEDDELELSE_TYPE ktmt on kun.KUNDETYPE_ID = ktmt.KUNDE_TYPE_ID
+join meddelelse_type_gruppe mtg on ktmt.MEDDELELSE_TYPE_ID = mtg.MEDDELELSES_TYPE_GRUPPE_ID
+join meddelelse_type mt on mm.MEDDELELSE_TYPE_ID = mt.MEDDELELSE_TYPE_ID
+join AOGD.MEDD_FORMATERET_MEDD mfm on mm.MEDDELELSE_ID=mfm.MEDDELELSE_ID
+join AOGD.FORMATERET_MEDD_FORSEND fmf on mfm.FORMATERET_MEDDELELSE_ID = fmf.FORMATERET_MEDDELELSE_ID
+join AOGD.FORSENDELSE f on fmf.FORSENDELSE_ID = f.FORSENDELSE_ID
+order by mm.aogd_oprettet desc)]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>B2C8A893-44EE-3E9C-4F1B-D6507CCA856C</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

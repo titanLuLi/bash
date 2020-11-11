@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AAF57CBC-D550-7D51-91BB-C9B5130E5B04" containerWithKeyObject="4BABF89A-8227-2CC0-C17F-5D7A0217C2F8" localFKIndex="DAB11F9A-ADC4-DD62-4F46-CAD25775426F" name="KUNDE_AFTALE_FK1">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>KUNDE_AFTALE_FK1</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:10 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.KUNDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8DA6D72A-1486-58D3-4140-42F81E69AA13</referredTableID>
+<keyObject>91CD6CD5-4EF6-DB27-7DB4-70DF5BA172E5</keyObject>
+<referredKeyID>91CD6CD5-4EF6-DB27-7DB4-70DF5BA172E5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>KUNDE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

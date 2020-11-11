@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EF0DBB6-88CF-B0B7-705D-E9DEDB969393" containerWithKeyObject="2CB4858E-86E9-AFC1-5014-F7A08A1BE3B2" localFKIndex="90768B79-84CF-2C8F-5102-4B766FEE0BE8" name="BUSINESS_RULE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>BUSINESS_RULE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.BUSINESS_RULE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>569F2EF2-748E-97DF-2CDA-D853247043D6</referredTableID>
+<keyObject>74DF4D6C-9B08-EDA2-482D-5FEC8BBA8809</keyObject>
+<referredKeyID>74DF4D6C-9B08-EDA2-482D-5FEC8BBA8809</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>RULE_KEY</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

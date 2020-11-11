@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="131714BC-709A-5757-59E5-C4762DBB9C89" containerWithKeyObject="8B47552D-18EE-743C-E476-DDF5E76FE38B" localFKIndex="FDAEB762-A5BB-6DD9-4365-DA5F5751C4A2" name="MEDDELELSE_BATCH_CHECK_IN_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MEDDELELSE_BATCH_CHECK_IN_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:10 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.BATCH_CHECK_IN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>59AA49FB-1CC3-10BA-698C-DB8421888928</referredTableID>
+<keyObject>73127333-B4A3-305E-F318-2F7F119BB829</keyObject>
+<referredKeyID>73127333-B4A3-305E-F318-2F7F119BB829</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BATCH_CHECK_IN_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="aogd_tb" id="138CF1D3-EBDC-11C3-54A8-D643F6BF29B6" version="3.5">
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:07:42 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>138CF1D3-EBDC-11C3-54A8-D643F6BF29B6</designId>
+</OSDM_Design>

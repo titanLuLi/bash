@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F0ACC53-6077-F80F-4377-319159694DA2" containerWithKeyObject="58168F8B-5B4C-63C8-D522-5EC583C38B8C" localFKIndex="3F78A428-AA0C-C6AA-2C39-611CF15FEB78" name="FK_B8LH9DXTU84XS5BSP97HAIA6P">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>FK_B8LH9DXTU84XS5BSP97HAIA6P</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:09 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.EMAIL_MESSAGE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42D8904F-68E4-B9A2-706E-2CC6E43977B2</referredTableID>
+<keyObject>5A1F2D0F-3FF5-DBC7-A322-65F3296C37AF</keyObject>
+<referredKeyID>5A1F2D0F-3FF5-DBC7-A322-65F3296C37AF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EMAIL_MESSAGE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

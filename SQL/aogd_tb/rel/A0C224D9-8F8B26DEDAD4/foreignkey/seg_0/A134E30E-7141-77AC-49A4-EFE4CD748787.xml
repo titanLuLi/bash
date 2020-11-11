@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A134E30E-7141-77AC-49A4-EFE4CD748787" containerWithKeyObject="D2D95187-168B-71AE-CCE1-2722616593C8" localFKIndex="358EB283-8021-B8E2-12E5-A47A0306B1B3" name="MAPPE_KOMMUNIKATIONAFTALEID_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MAPPE_KOMMUNIKATIONAFTALEID_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:10 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.KOMMUNIKATION_AFTALE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ADB64D55-4563-57F8-A794-DDFA002D9B02</referredTableID>
+<keyObject>41BDAA18-0EBE-1F35-22F4-013877419884</keyObject>
+<referredKeyID>41BDAA18-0EBE-1F35-22F4-013877419884</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>KOMMUNIKATIONAFTALE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

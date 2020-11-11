@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A2AA0664-D1FB-9836-B6A6-9C764CBE7978" containerWithKeyObject="2FEC9D29-5E7F-A07F-F06A-A545DEC13032" localFKIndex="093D8B13-400E-672D-9014-C096EF9F7045" name="MTV_PAPER_TYPE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>MTV_PAPER_TYPE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.PAPER_TYPES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>906CB90B-3522-FA63-C449-4BE83556A243</referredTableID>
+<keyObject>54A78DB2-6443-E3C5-26A6-556F160F6259</keyObject>
+<referredKeyID>54A78DB2-6443-E3C5-26A6-556F160F6259</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PAPER_TYPE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

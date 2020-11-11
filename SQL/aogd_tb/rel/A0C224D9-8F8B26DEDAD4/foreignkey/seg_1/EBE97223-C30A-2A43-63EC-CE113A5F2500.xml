@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="EBE97223-C30A-2A43-63EC-CE113A5F2500" containerWithKeyObject="C6ABC63B-2393-D202-A256-4304BB6A60DA" localFKIndex="B76A7CD2-502C-C23D-DC21-880E152F01E3" name="TELEFON_TELEFONTYPE_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>TELEFON_TELEFONTYPE_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.TELEFON_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>435545DE-138D-B54D-3AAF-BCAA540053E7</referredTableID>
+<keyObject>F83680B8-75F2-D017-9092-397A2EC7B2C2</keyObject>
+<referredKeyID>F83680B8-75F2-D017-9092-397A2EC7B2C2</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>TELEFON_TYPE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="ED2B45BD-B5A1-FF6A-26FE-65027DF055B1" containerWithKeyObject="2FEC9D29-5E7F-A07F-F06A-A545DEC13032" localFKIndex="F3E35CFB-100F-28AD-C397-2D6B50E7E2E0" name="VERSION_PRI_SKABELON_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>VERSION_PRI_SKABELON_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:11 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.SKABELON_SET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51D4EA43-3F15-E652-9E5D-C11B6FFCD7A5</referredTableID>
+<keyObject>A0F41C5B-3E59-F90E-4468-A5D153AE50AE</keyObject>
+<referredKeyID>A0F41C5B-3E59-F90E-4468-A5D153AE50AE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SKABELON_SET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

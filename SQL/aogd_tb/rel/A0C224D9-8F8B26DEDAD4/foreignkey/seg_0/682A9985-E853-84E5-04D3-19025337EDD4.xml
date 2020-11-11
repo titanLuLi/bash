@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="682A9985-E853-84E5-04D3-19025337EDD4" containerWithKeyObject="F74F39E4-8C6D-364C-50CD-0798F1DD03EF" localFKIndex="9641B633-CA45-F766-CAE9-D623C3F67DDA" name="ADRESSE_LAND_FK">
+<sourceConnName>AogD_FKT03_ELpeu4muKQp4</sourceConnName>
+<sourceObjSchema>AOGD</sourceObjSchema>
+<sourceObjName>ADRESSE_LAND_FK</sourceObjName>
+<createdBy>tnl</createdBy>
+<createdTime>2020-06-03 12:16:08 UTC</createdTime>
+<ownerDesignName>aogd_tb</ownerDesignName>
+<referredTableLongName>AOGD.LAND</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C6D3B01-B649-B8FF-93FD-6A43616B5233</referredTableID>
+<keyObject>0D23EAE9-8E76-5A0D-9DFB-EBB15DDE9AEE</keyObject>
+<referredKeyID>0D23EAE9-8E76-5A0D-9DFB-EBB15DDE9AEE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>LAND_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
